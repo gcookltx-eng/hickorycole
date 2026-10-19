@@ -242,13 +242,15 @@
                 position: relative;
                 left: 50%;
                 transform: translateX(-50%);
+                aspect-ratio: 16 / 9;
             }
             
             .little-video video {
                 display: block;
                 width: 100%;
-                height: auto;
-                max-height: 315px;
+                height: 100%;
+                object-fit: contain;
+                max-height: none;
                 background: #000;
                 border-radius: 6px;
             }
