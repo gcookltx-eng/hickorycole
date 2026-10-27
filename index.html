@@ -101,6 +101,26 @@
             margin-bottom: 24px;
         }
 
+            .tfc-video {
+                width: 100%;
+                max-width: 560px;
+                margin: 24px 0;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                aspect-ratio: 16 / 9;
+            }
+            
+            .tfc-video video {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                max-height: none;
+                background: #000;
+                border-radius: 6px;
+            }
+
         .button-row {
             text-align: center;
             margin-top: 35px;
@@ -233,6 +253,26 @@
 
             .backlist-text h3 {
                 text-align: center;                
+            }
+
+            .fc-video {
+                width: 100%;
+                max-width: 560px;
+                margin: 24px 0;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                aspect-ratio: 16 / 9;
+            }
+            
+            .fc-video video {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                max-height: none;
+                background: #000;
+                border-radius: 6px;
             }
 
             .little-video {
@@ -433,6 +473,13 @@
 
             </div>
 
+            <div class="fc-video">
+                <video controls playsinline preload="auto">
+                    <source src="fc-promo-video.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+            
             <div class="button-row">
 
                 <!-- Replace # with your Amazon book URL -->
